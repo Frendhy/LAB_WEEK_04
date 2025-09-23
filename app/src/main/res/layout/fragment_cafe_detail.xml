@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/cafe_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="halo"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/cafe_image"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/cafe_list" />
+
+        <TextView
+            android:id="@+id/cafe_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hai"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>
