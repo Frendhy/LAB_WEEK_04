@@ -24,12 +24,12 @@ class CafeFragment : Fragment() {
         val viewPager = view.findViewById<ViewPager2>(R.id.view_pager)
         val tabLayout = view.findViewById<TabLayout>(R.id.tab_layout)
 
-        // Pass the Fragment instance (this) because CafeAdapter(fragment: Fragment) expects a Fragment
+        // create adapter using the fragment instance (this)
         val adapter = CafeAdapter(this)
         viewPager.adapter = adapter
 
-        // Explicit parameter types help the compiler
-        TabLayoutMediator(tabLayout, viewPager) { tab: com.google.android.material.tabs.TabLayout.Tab, position: Int ->
+        // set the tab titles from the same resource IDs
+        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             tab.text = resources.getString(TABS_FIXED[position])
         }.attach()
     }
